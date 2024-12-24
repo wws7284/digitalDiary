@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignmentcreateedit.Create">
+   <children>
+      <TextField fx:id="titleField" layoutX="89.0" layoutY="29.0" />
+      <Slider fx:id="moodSlider" layoutX="100.0" layoutY="77.0" majorTickUnit="1.0" max="4.0" minorTickCount="0" prefHeight="24.0" prefWidth="222.0" showTickMarks="true" snapToTicks="true" />
+      <Text layoutX="38.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mood:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="89.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Very sad">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sad">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neutral">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="249.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Happy">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="290.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Very happy">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Button layoutX="437.0" layoutY="457.0" mnemonicParsing="false" onAction="#onCreateButtonClick" text="Create" />
+      <Button layoutX="507.0" layoutY="457.0" mnemonicParsing="false" onAction="#onCancelButtonClick" text="Cancel" />
+      <Text layoutX="300.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="datePicker" layoutX="348.0" layoutY="29.0" />
+      <Button layoutX="340.0" layoutY="457.0" mnemonicParsing="false" onAction="#onSetFilePathButtonClick" text="Set file path" />
+      <TextArea fx:id="contentField" layoutX="38.0" layoutY="150.0" prefHeight="300.0" prefWidth="522.0" />
+   </children>
+</AnchorPane>
